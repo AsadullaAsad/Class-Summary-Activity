@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffbb00">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Signup"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#444444"/>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:padding="8dp">
+
+
+            <TableRow android:layout_marginBottom="4dp">
+
+
+                <TextView
+                    android:text="Name"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:text=":"
+                    android:textSize="20sp" />
+
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="textPersonName" />
+            </TableRow>
+            <TableRow>
+
+
+                <TextView
+                    android:text="Email"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:text=":"
+                    android:textSize="20sp" />
+
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+
+
+            </TableRow>
+            <TableRow>
+
+
+                <TextView
+                    android:text="Phone"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:text=":"
+                    android:textSize="20sp" />
+
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+
+
+            </TableRow>
+
+
+            <TableRow>
+
+
+                <TextView
+                    android:text="User Id"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:text=":"
+                    android:textSize="20sp" />
+
+
+                <EditText
+                    android:id="@+id/etUserId"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+
+
+            </TableRow>
+
+
+            <TableRow>
+
+
+                <TextView
+                    android:text="Password"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:text=":"
+                    android:textSize="20sp" />
+
+
+                <EditText
+                    android:id="@+id/etPW"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="numberPassword" />
+
+
+
+
+            </TableRow>
+
+
+            <TableRow>
+
+
+                <TextView
+                    android:text="Re-enter Password"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:text=":"
+                    android:textSize="20sp" />
+
+
+                <EditText
+                    android:id="@+id/etRPW"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+
+
+            </TableRow>
+
+
+            <CheckBox
+                android:id="@+id/cbRemUserId"
+                android:text="Remember User ID"
+                android:textSize="20sp" />
+            <CheckBox
+                android:id="@+id/cbRemLogin"
+                android:text="Remember password"
+                android:textSize="20sp" />
+
+
+            <RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/account_type_lebel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already Have an account?"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"/>
+
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/account_type_lebel"
+                    android:backgroundTint="#ffffff"
+                    android:text="Login"
+                    android:textColor="#0342FD"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+        </TableLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Exit"
+                android:backgroundTint="#ffbb00"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="|"
+                android:gravity="center"
+
+
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#444444"/>
+            <Button
+                android:id="@+id/btnGo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Go"
+                android:backgroundTint="#ffbb00"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

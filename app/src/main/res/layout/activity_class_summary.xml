@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassSummaryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#C1C9D6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Class Summary"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:padding="16dp"
+            android:background="#ffffff"
+           >
+
+            <TableRow>
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:text=": "
+                    android:id="@+id/clName"
+                    android:layout_weight="1"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="9dp">
+                <TextView
+                    android:text="ID"
+                    android:layout_marginLeft="4dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textSize="20sp"/>
+                <TextView
+
+                    android:id="@+id/clId"
+                    android:text=": 2021-2-60-117"
+                    android:textSize="20sp"
+
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="9dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginLeft="4dp"
+                    android:text="Course"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+
+                <TextView
+                    android:text=" : "
+                    android:id="@+id/tvCourse"
+                    android:textSize="20sp"
+
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Type"
+                    android:layout_marginLeft="4dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/type"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/theory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Theory"
+                        android:layout_weight="1"
+                        android:textSize="18dp"/>
+                    <RadioButton
+                        android:id="@+id/lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lab"
+                        android:textSize="18dp"/>
+
+                </RadioGroup>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Date"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="20sp" />
+                <EditText
+
+                    android:id="@+id/clDate"
+
+                    android:layout_weight="1"
+                    android:hint="YYYY-MM-DD"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Lecture"
+                    android:layout_marginLeft="4dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/clLecture"
+                    android:layout_weight="1"
+                    android:layout_height="48dp"
+                    android:hint="Enter Lecture Number"/>
+
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginLeft="4dp"
+                    android:text="Topic"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/clTopic"
+                    android:hint="Enter topic title"
+
+
+                    android:layout_weight="1" />
+
+            </TableRow>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="4dp"
+                    android:textStyle="bold"
+                    android:text="Summary of the lecture"/>
+                <LinearLayout
+                    android:layout_weight="7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <EditText
+                        android:layout_marginLeft="4dp"
+                        android:id="@+id/Summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Insert the keywords or phrases discussed in the class. Each keyword or phrases must be separated by comma(,)"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/classCancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textStyle="bold"
+                android:backgroundTint="#C1C9D6"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/classSave"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Save"
+                android:textStyle="bold"
+                android:backgroundTint="#C1C9D6"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
